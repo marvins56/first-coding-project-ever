@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8' ?>
+<widget
+    android-versionCode = '1'
+    id = 'com.iBuildThings.MP3Player'
+    version = '1.0.0'
+    xmlns = 'https://www.w3.org/ns/widgets'>
+
+    <name>log</name>
+    <description>login sampler</description>
+    <author>iBuildThings</author>
+
+
+
+
+
+</widget>

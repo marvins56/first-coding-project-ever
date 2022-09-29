@@ -1,0 +1,193 @@
+body{
+  padding: 0;
+
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+
+background-image:url('image-t.gif');
+background-size:cover;
+background-repeat:no-repeat;
+background-repeat: no-repeat;
+background-attachment: fixed;
+
+
+}
+.logo a{
+  color:black;
+  text-decoration: none;
+  position: relative;
+  left:20%;
+}
+.header{
+  width:95%;
+  margin: auto;
+
+}
+.h-container{
+  display: grid;
+  grid-template-columns: repeat(2, 70% 30%);
+  color:white;
+
+}
+h1,h2,h3, pre {
+color:white;
+}
+.h-container i{
+  color:white;
+}
+li {
+  list-style-type: none;
+}
+.toggle-bar a {
+text-decoration: none;
+color:white;
+
+}
+.icons-home{
+  display:flex;
+}
+.icons-home i{
+  padding: 0 20px;
+}
+
+.h-container i, #contactus{ transition: all .4s ease-in-out;
+padding:10px;
+
+}
+.h-container i:hover , #contactus:hover{ transform: scale(1.1);
+color:darkcyan;
+border:1px solid lightgrey;
+border-radius: 50px;
+
+}
+#contactus{
+
+}
+#icon-nav{
+}
+.toogle-icons{
+  position:fixed;
+
+}
+.hero-container {
+text-align: center;
+}
+#horizontalline{
+  width:30%;
+}
+.login-boxes{
+  display: flex;
+  flex-direction: column;
+  padding:10px;
+
+}
+
+input[type = password],input[type = email]{
+  width:220px;
+  padding:10px;
+  border-radius: 8px;
+  border:none;
+}
+input[type = password]:focus,input[type = email]:focus{
+  outline:none;
+}
+.mail-box,.password-box,.accounts{
+  padding: 8px;
+  align-self: center;
+  border:1px solid lightgrey;
+  margin:8px;
+  border-radius: 10px;
+
+}
+.mail-box i,.password-box i{
+  padding: 0 5px;
+  color: darkcyan;
+}
+.accounts a{
+  text-decoration: none;
+  color:white;
+}
+.accounts {
+  background-color: darkcyan;
+   transition: all .4s ease-in-out;
+}
+.accounts:hover{
+  transform: scale(1.1);
+}
+
+.h{
+  margin-top: -10px;
+  color: white;
+}
+.wrapper,.h {
+    align-items: center;
+    text-align: center;
+}
+.wrapper .button{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover{
+  width: 200px;
+}
+.wrapper .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+  background: #4267B2;
+}
+.wrapper .button:nth-child(2):hover .icon{
+  background: #1DA1F2;
+}
+.wrapper .button:nth-child(3):hover .icon{
+  background: #E1306C;
+}
+.wrapper .button:nth-child(4):hover .icon{
+  background: #ff0000;
+}
+.wrapper .button .icon i{
+  font-size: 20px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+.wrapper .button span{
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 60px;
+  margin-left: 5px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span{
+  color: #4267B2;
+}
+.wrapper .button:nth-child(2) span{
+  color: #1DA1F2;
+}
+.wrapper .button:nth-child(3) span{
+  color: #E1306C;
+}
+.wrapper .button:nth-child(4) span{
+  color: #ff0000;
+}
+.icon-container{
+
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pricing page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+       href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+       integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+       crossorigin="anonymous"/>
+ <link rel="stylesheet" type="text/css" href="css/all.min.css">
+ <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="pricing.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  </head>
+  <body>
+
+    <header>
+      <a href="index.html" class="brand" id="brand">Brand</a>
+      <nav class="menu">
+        <div class="btn">
+          <i class="fas fa-times close-btn"></i>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="#" id="pricing">Pricing</a>
+        <a href="#">About</a>
+        <a href="logins.html" target="_blank">Login</a>
+        <a href="logins.html" id="getstarted"> Get-Started</a>
+      </nav>
+      <div class="btn">
+        <i class="fas fa-bars menu-btn"></i>
+      </div>
+    </header>
+
+
+    <section class="hero" data-aos="zoom-in-left">
+      <div class="col-1">
+        <h1>Our  <span>plans </span> for your <span>strategies</span></h1>
+        <p>See below our main plans for your buisnes, for your startup and agency.
+        it starts from here! You can teach yourself what you really like</p>
+      </div>
+      <div class="col-2">
+      <span>Bill payment</span>
+      <i class="fas fa-toggle-off"></i>
+        <span> Bill Annually</span>
+      </div>
+    </section>
+    <section class="price-labels" >
+
+              <div class="lable-1" data-aos="zoom-in-down">
+                <h1>  <span> &#36;150</span>/month</h1>
+                <h1>Easy</h1>
+                <p>all the basics for buisiness that are starting</p>
+                <hr>
+                <i class="far fa-check-circle"></i>One project <br>
+
+                <i class="far fa-check-circle"></i>Your Dashboard <br>
+                <i class="far fa-check-circle"></i>One project <br>
+
+                <i class="far fa-check-circle"></i>Your Dashboard <br>
+                <div class="get">
+                <a href="#" id="get-easy"> Get Easy</a>
+                </div>
+
+              </div>
+
+<div class="lable-2" data-aos="zoom-in-down">
+  <h1>  <span> &#36;160</span>/month</h1>
+  <h1>Basic</h1>
+  <p>all the basics for buisiness that are starting</p>
+  <hr>
+  <i class="far fa-check-circle"></i>One project <br>
+
+  <i class="far fa-check-circle"></i>Your Dashboard <br>
+  <i class="far fa-check-circle"></i>One project <br>
+
+  <i class="far fa-check-circle"></i>Your Dashboard <br>
+
+  <div class="get">
+      <a href="#" id="get-easy"> Get Basic</a>
+  </div>
+</div>
+          <div class="lable-3" data-aos="zoom-in-down">
+            <h1>  <span> &#36;110</span>/month</h1>
+            <h1>Premium</h1>
+            <p>all the basics for buisiness that are starting</p>
+            <hr>
+            <i class="far fa-check-circle"></i>One project <br>
+
+            <i class="far fa-check-circle"></i>Your Dashboard <br>
+            <i class="far fa-check-circle"></i>One project <br>
+
+            <i class="far fa-check-circle"></i>Your Dashboard <br>
+            <div class="get">
+              <a href="#" id="get-easy"> Get Premium</a>
+            </div>
+
+
+
+          </div>
+
+    </section>
+
+    <script type="text/javascript">
+    //javascript for navigation bar effect on scroll
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
+
+    //javascript for responsive navigation sidebar menu
+    var menu = document.querySelector('.menu');
+    var menuBtn = document.querySelector('.menu-btn');
+    var closeBtn = document.querySelector('.close-btn');
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add('active');
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove('active');
+    });
+    </script>
+    <script>
+
+  AOS.init();
+
+</script>
+
+  </body>
+</html>

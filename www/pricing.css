@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8em;
+}
+
+body{
+  min-height: 100vh;
+}
+
+
+
+header{
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  transition: 0.6s;
+}
+
+header.sticky{
+  background: #1483D5;
+  padding: 15px 100px;
+}
+#brand{
+  color:purple;
+}
+header .brand{
+  color: black;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+header .menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .menu a{
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 30px;
+  padding: 0 10px;
+  border-radius: 20px;
+ transition: all .5s ease-in-out;
+  transition-property: color, background;
+}
+
+header .menu a:hover{
+  color: #1483D5;
+  background: #fff;
+  transform: scale(1.3);
+}
+
+header .btn{
+  color: black;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+#getstarted{
+  background-color: #1483D5;
+  color:white;
+padding:10px;
+
+}
+#pricing{
+  border-bottom: 2px solid #1483D5;;
+  padding:5px;
+}
+
+.hero{
+  position: relative;
+  top:100px;
+  text-align: center;
+  width:80%;
+  margin: auto;
+}
+.col-2 i{
+  font-size: 35px;
+  color:#1483D5;
+  padding:10px;
+  cursor:pointer;
+}
+.price-labels{
+  position:relative;
+  top:150px;
+}
+#get-easy {
+  padding:10px;
+color:#1483D5;
+text-decoration: none;
+border-radius:50px;
+border:1px solid black;
+transition:  0.4s ;
+}
+
+#get-easy:hover{
+  color:white;
+  background-color: #1483D5;
+  border: 1px solid white;
+  transform: scale(1.5);
+}
+.price-labels{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  width:100%;
+
+  line-height: 1.8rem;
+  grid-gap: 40px;
+}
+.price-labels span{
+  color: #4CAF50;
+  font-size: 1.8em;
+}
+.price-labels i{
+  padding: 10px;
+
+}
+.get{
+  padding-top: 20px;
+  justify-content: center;
+position: relative;
+left:40px;
+}
+.lable-1 i,.lable-2 i,.lable-3 i{
+  color:#4CAF50;
+}
+@media (max-width: 800px){
+  header .btn{
+    display: block;
+  }
+
+  header .menu{
+    position: fixed;
+    background: #1483D5;
+    flex-direction: column;
+    min-width: 200px;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    padding: 60px 50px;
+    transition: 0.5s;
+    transition-property: right;
+  }
+
+  header .menu.active{
+    right: 0;
+  }
+
+  header .menu .close-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 25px;
+  }
+
+  header .menu a{
+    display: block;
+    font-size: 20px;
+    margin: 20px;
+    padding: 0 15px;
+  }
+.price-labels{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    width:50%;
+  margin:auto;
+    line-height: 1.8rem;
+    grid-gap: 40px;
+  }
+  .price-labels hr{
+    margin:20px;
+    width:80%;
+  }
+  .lable-1 ,.lable-2 ,.lable-3 {
+  border:1px solid lightgrey;
+  padding: 20px;
+  border-radius: 20px;
+  }
+
+}
